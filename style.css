@@ -1,0 +1,70 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 75px 0px 75px;
+
+}
+
+.banner-image{
+    height: 450px;
+    width: 1000px;
+    /*margin: 50px 0px 20px 0px;*/
+    background-position: center;
+    text-align: center;
+    line-height: 450px;
+    color: black;
+  background-color: aqua;   
+}
+
+h1{
+    font-size: 75px;
+}
+
+.center h1{
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+
+.content{
+    height:324px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+   background-color: #2f3030;
+  
+}
+
+.article{
+    margin: 20px;
+}
+
+p{
+    color: #ebf0f0;
+  
+}
+h3{
+  color: white;
+  
+}
+
+@media (min-width: 700px) {
+    .container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "header  header"
+        "nav     aside"
+        "main   main"
+        "footer  banner";
+    }
+     @media (max-width: 699px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header "
+        "nav"
+        "aside"
+        "main"
+        "footer"
+        "banner";
+    }
